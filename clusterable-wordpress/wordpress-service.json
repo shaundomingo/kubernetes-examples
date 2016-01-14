@@ -1,0 +1,17 @@
+{
+  "kind": "Service",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "wpfrontend"
+  },
+  "spec": {
+    "ports": [{
+      "port": 80,
+      "nodePort": 30100
+    }],
+    "selector": {
+      "app": "wordpress"
+    },
+    "type": "NodePort"
+  }
+}
